@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>05.07.24</title>
+</head>
+<body>
+    <div class="cont">
+        <h1>ДОБАВЛЕНИЕ, ИЗМЕНЕНИЕ И УДАЛЕНИЕ ЭЛЕМЕНТА ИЗ ТАБЛИЦЫ</h1>
+        <form name="add_new" class="new_person">
+        
+            <label for="name">
+                <span>Имя</span>
+                <input name="name" id="name" type="text" placeholder="Ваше имя">
+            </label>
+            <label for="age">
+                <span>Возраст</span>
+                <input name="age" id="age" type="text" placeholder="Ваш возраст">
+            </label>
+            
+            <button class="save_new">Показать</button>
+        </form>
+        <table class="users_data">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Имя студента</th>
+                    <th>Год рождения</th>
+                    <th>Действие</th>
+                </tr>
+            </thead>
+            <tbody class="place"></tbody>
+        </table>
+    </div>
+    <dialog class="dialog">
+        <form>
+            <input class="new_name" type="text" name="new_name" id="new_name" placeholder="Новое имя">
+            <input class="new_age" type="text" name="new_age" id="new_age" placeholder="Новый возраст">
+            <button class="save_edit">Сохранить</button>
+        </form>
+    </dialog>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
