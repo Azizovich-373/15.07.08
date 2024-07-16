@@ -29,18 +29,6 @@ export function Student(item , array){
     btn_edit.append(img_edit)
     btn_remove.append(img_remove)
 
-    // btn_remove.onclick = () => {
-    //     let idx = array.indexOf(item)
-    //     fetch('http://localhost:8080/todos',{        
-    //         method: "DELETE",
-    //     })
-    //     .then(res => {
-    //         array.splice(idx, 1);
-    //         tr_body.remove();
-    //     })
-
-    // }
-
     btn_remove.onclick = () => {
         let idx = array.indexOf(item);
         let studentId = array[idx].id;
